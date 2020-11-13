@@ -84,3 +84,12 @@ p.hyper, p.tube, div.inline {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+#search-container {
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
