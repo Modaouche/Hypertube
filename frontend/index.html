@@ -8,6 +8,7 @@
 <script src="scripts/header.js"></script>
 <script src="scripts/colormode.js"></script>
 <script src="scripts/login.js"></script>
+<script src="scripts/signup.js"></script>
 </head>
 <body>
 
@@ -17,7 +18,8 @@
   <a href="index.html" class="active"><li>Home</li></a>
   <a href="#"><li>About</li></a>
   <a href="#"><li>Contact</li></a>
-  <li style="float:right; padding-right: 20px; cursor: pointer;" class="signin button" onclick="openForm()"><div>Sign-In</div></li>
+  <li style="float:right; cursor: pointer;" class="signin button" onclick="openForm()"><div>Sign-In</div></li>
+  <li style="float:right; cursor: pointer;" class="signup button" onclick="openSignupForm()"><div>Sign-up</div></li>
 </div> 
 
 <div id="search-container">
@@ -29,17 +31,48 @@
 
 <div class="form-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
+    <h1 id=h1-login>Login</h1>
 
     <label for="email"><b>Nickname/Email</b></label>
     <input type="text" placeholder="example@hypertube.com" name="email" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="loveHypertube123" name="psw" required>
+    <label class="pass" for="psw"><b>Password</b></label>
+    <input class="pass" type="password" placeholder="loveHypertube123" name="psw" required>
 
-    <button type="submit" class="btn">Login</button>
+    <button type="submit" class="btn" id="login">Login</button>
     <button type="button" class="btn lost" onclick="lostForm()">Lost Password</button>
+    <button type="button" id="reset" class="btn lost" onclick="resetPass()" style="display: none;">Reset Password</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<div class="form-popup" id="signupForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 id=h1-register>Register</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="example@hypertube.com" name="email" required>
+
+    <label for="nickname"><b>Nickname</b></label>
+    <input type="text" placeholder="supertube42" name="nickname" required>
+
+    <label class="pass" for="psw"><b>Password</b></label>
+    <input class="pass" type="password" placeholder="loveHypertube123" name="psw" required>
+
+    <label class="pass" for="psw"><b>Verify Password</b></label>
+    <input class="pass" type="password" placeholder="loveHypertube123" name="psw" required>
+
+    <label for="first-name"><b>First Name</b></label>
+    <input type="text" placeholder="Linus" name="first-name" required>
+
+    <label for="last-name"><b>Last Name</b></label>
+    <input type="text" placeholder="Torvalds" name="last-name" required>
+
+    <label for="picture"><b>Profile Picture</b></label>
+    <input type="file" name="picture" required>
+
+    <button type="submit" class="btn" id="register">Register</button>
+    <button type="button" class="btn cancel" onclick="closeSignupForm()">Close</button>
   </form>
 </div>
 

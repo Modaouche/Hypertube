@@ -132,6 +132,9 @@ p.hyper, p.tube, div.inline {
   max-width: 300px;
   padding: 10px;
   background-color: white;
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Full-width input fields */
@@ -174,4 +177,8 @@ p.hyper, p.tube, div.inline {
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+#myFile {
+    background-color: red;
 }
