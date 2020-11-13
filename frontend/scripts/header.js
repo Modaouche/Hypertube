@@ -5,9 +5,9 @@ function scrollFunction() {
 var elementStyle = document.getElementById("search-container").style;
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("header").style.fontSize = "60px";
-    elementStyle.top = "150px";
+    elementStyle.top = "140px";
   } else {
     document.getElementById("header").style.fontSize = "150px";
-    elementStyle.top = "250px";
+    elementStyle.top = "240px";
   }
 }
