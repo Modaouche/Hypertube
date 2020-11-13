@@ -31,13 +31,14 @@
   <form action="/action_page.php" class="form-container">
     <h1>Login</h1>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="email"><b>Nickname/Email</b></label>
+    <input type="text" placeholder="example@hypertube.com" name="email" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="loveHypertube123" name="psw" required>
 
     <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn lost" onclick="lostForm()">Lost Password</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
