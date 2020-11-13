@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Hypertube</title>
    <link rel="stylesheet" href="stylesheets/style.css">
@@ -9,14 +9,15 @@
 <script src="scripts/colormode.js"></script>
 <script src="scripts/login.js"></script>
 </head>
-
 <body>
+
 <div id="header"><p class="hyper">Hyper</p><p class="tube">Tube</p></div>
+
 <div class="navbar">
-  <li><a href="index.html" class="active">Home</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Contact</a></li>
-  <li style="float:right; padding-right: 20px;"><div class="signin button" onclick="openForm()">Sign-In</div></li>
+  <a href="index.html" class="active"><li>Home</li></a>
+  <a href="#"><li>About</li></a>
+  <a href="#"><li>Contact</li></a>
+  <li style="float:right; padding-right: 20px; cursor: pointer;" class="signin button" onclick="openForm()"><div>Sign-In</div></li>
 </div> 
 
 <div id="search-container">
@@ -37,14 +38,14 @@
     <input type="password" placeholder="Enter Password" name="psw" required>
 
     <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()z">Close</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
 
 <div style="margin-top:200px;padding:15px 15px 2500px;font-size:30px"></div>
 
 <div class="footer">
-<a href="https://github.com/Modaouche/Hypertube", target="_blank", class="fa fa-github fa-2x"></a> 
+  <a href="https://github.com/Modaouche/Hypertube", target="_blank", class="fa fa-github fa-2x"></a> 
 </div>
 
 </body>
