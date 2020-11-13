@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="stylesheets/style.css">
 <script src="scripts/header.js"></script>
 <script src="scripts/colormode.js"></script>
-
+<script src="scripts/login.js"></script>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
   <li><a href="index.html" class="active">Home</a></li>
   <li><a href="#">About</a></li>
   <li><a href="#">Contact</a></li>
-  <li style="float:right; padding-right: 20px;"><div class="open-button" onclick="openForm()">Sign-In</div></li>
+  <li style="float:right; padding-right: 20px;"><div class="signin button" onclick="openForm()">Sign-In</div></li>
 </div> 
 
 <div id="search-container">
@@ -25,7 +25,6 @@
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
 </div>
-
 
 <div class="form-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
@@ -38,22 +37,11 @@
     <input type="password" placeholder="Enter Password" name="psw" required>
 
     <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="button" class="btn cancel" onclick="closeForm()z">Close</button>
   </form>
 </div>
 
 <div style="margin-top:200px;padding:15px 15px 2500px;font-size:30px"></div>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
-
 
 <div class="footer">
 <a href="https://github.com/Modaouche/Hypertube", target="_blank", class="fa fa-github fa-2x"></a> 
