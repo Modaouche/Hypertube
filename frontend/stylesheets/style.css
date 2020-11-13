@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
 
-.header {
-  padding-top: 50px; /* Some padding */
+#header {
+  padding: 50px 10px; /* Some padding */
   text-align: center; /* Centered text */
-  font-size: 90px; /* Big font size */
+  font-size: 150px; /* Big font size */
   font-weight: bold;
   position: fixed; /* Fixed position - sit on top of the page */
   top: 0;
@@ -71,7 +71,7 @@ a {
     text-decoration: none;
 } 
 
-h2 {
+p.hyper, p.tube {
     display: inline;
 }
 
