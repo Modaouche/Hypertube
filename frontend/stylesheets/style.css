@@ -69,7 +69,7 @@ a {
     text-decoration: none;
 } 
 
-p.hyper, p.tube {
+p.hyper, p.tube, div.inline {
     display: inline;
 }
 
